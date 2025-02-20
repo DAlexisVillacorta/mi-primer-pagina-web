@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Aprendiendo programación</title>
+            <style>
+                /* Fondo y fuente futurista */
+                body {
+                    background-color: #0a0a0a;
+                    color: #0ff; /* Texto en cian */
+                    font-family: Arial, sans-serif;
+                    text-align: center;
+                    position: relative;
+                    overflow-x: hidden;
+                    padding: 20px;
+                    
+                }
+                
+                   /* Aros de neón */
+            .neon-ring {
+                position: absolute;
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                border: 5px solid #0ff;
+                box-shadow: 0 0 20px #0ff, 0 0 40px #0ff, 0 0 60px #0ff;
+                animation: glow 2s infinite alternate;
+            }
+
+            .ring1 {
+                top: 20%;
+                left: 5%;
+            }
+
+            .ring2 {
+                top: 60%;
+                left: 10%;
+            }
+
+            .ring3 {
+                top: 40%;
+                right: 5%;
+            }
+
+            @keyframes glow {
+                0% {
+                    transform: scale(1);
+                    opacity: 0.8;
+                }
+                100% {
+                    transform: scale(1.2);
+                    opacity: 1;
+                }
+            }
+
+                /* Estilo del título */
+                h1 {
+                    font-size: 2.5em;
+                    text-shadow: 0 0 10px #0ff;
+                }
+    
+                /* Estilo del párrafo */
+                p {
+                    font-size: 1.2em;
+                    color: #aaa;
+                }
+    
+                /* Estilo de la lista */
+                ul {
+                    list-style: none;
+                    padding: 0;
+                }
+    
+                li {
+                    margin: 10px 0;
+                    font-size: 1.5em;
+                }
+    
+                /* Enlaces futuristas */
+                a {
+                    color: #0ff;
+                    text-decoration: none;
+                    transition: 0.3s;
+                }
+    
+                a:hover {
+                    color: #ff00ff; /* Cambia a morado */
+                    text-shadow: 0 0 10px #ff00ff;
+                }
+                /* Bloque de información */
+            .info {
+                margin-top: 40px;
+                border: 2px solid #0ff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 15px #0ff;
+                max-width: 800px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            /* Estilos generales */
+            body {
+                background-color: #0a0a0a;
+                color: #0ff;
+                font-family: Arial, sans-serif;
+                text-align: center;
+                position: relative;
+                overflow-x: hidden;
+                padding: 20px;
+                background-image: url('https://imgs.search.brave.com/Nec08QJ9jDjbt0HoIxyAmplYW2mAOcm_E2txx1UFCEk/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvc29s/ZGllci1waWN0dXJl/cy1kNTllZWU1NnF6/YXRmbWJlLmpwZw');
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+            }
+
+            /* Efectos de neón y sombras */
+            h1, h2, p {
+                text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+            }
+
+            /* Caja de datos personales con fondo oscuro */
+.neon-box {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro con transparencia */
+    border: 2px solid #0ff;
+    box-shadow: 0 0 20px #0ff, 0 0 40px #0ff;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s ease;
+}
+
+/* Párrafos con fondo oscuro y texto claro */
+.info {
+    color: #fff;  /* Color blanco para mayor contraste */
+    font-size: 1.2em;
+    line-height: 1.5;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro con opacidad */
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.info a {
+    color: #0ff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.info a:hover {
+    color: #ff00ff;
+}
+
+/* Animación para los detalles */
+.details {
+    animation: fadeIn 2s ease-out forwards;
+}
+
+            @keyframes fadeIn {
+                0% {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        
+            </style>
+    </head>
+    <body>
+        <div class="neon-ring ring1"></div>
+        <div class="neon-ring ring2"></div>
+        <div class="neon-ring ring3"></div>
+        <h1>Mi primera página web</h1>
+        <p>Quieres aprender programación para desarrollar páginas web.</p>
+        <ul>
+            <li><a href="https://www.youtube.com/watch?v=OWKXEJN67FE&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=4" target="_blank">CSS</a></li>
+            <li><a href="https://www.youtube.com/watch?v=xOinGb2MZSk&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=14" target="_blank">JavasCript</a></li>
+            <li><a href="https://www.youtube.com/watch?v=nKPbfIU442g" target="_blank">Python</a></li>
+        </ul>
+        <!-- Información sobre CSS -->
+        <div class="info">
+            <h2>¿Qué es CSS?</h2>
+            <p>CSS (Cascading Style Sheets) es un lenguaje de hojas de estilo que se usa para controlar la apariencia de las páginas web. Permite definir colores, tipografías, márgenes, posiciones y efectos visuales.</p>
+            <h2>Conceptos clave de CSS</h2>
+            <ul>
+                <li><strong>Seletores:</strong> Identifican qué elementos serán estilizados.</li>
+                <li><strong>Propiedades:</strong> Definen qué características visuales cambiar.</li>
+                <li><strong>Valores:</strong> Especifican el resultado del estilo (ej. `color: blue`).</li>
+                <li><strong>Box Model:</strong> Concepto clave sobre el tamaño y espaciado de los elementos.</li>
+                <li><strong>Flexbox y Grid:</strong> Métodos modernos para diseñar estructuras responsivas.</li>
+            </ul>
+        </div>
+        <!-- Ejemplos de código CSS -->
+        <div class="info">
+            <h2>Ejemplo de código CSS</h2>
+            <p>Aquí tienes un ejemplo de cómo cambiar el color de fondo y el color del texto en CSS:</p>
+            <div class="code-box">
+                <pre><code>
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+                </code></pre>
+            </div>
+
+            <p>También podemos estilizar botones con efectos de neón:</p>
+            <div class="code-box">
+                <pre><code>
+button {
+    background-color: black;
+    color: cyan;
+    border: 2px solid cyan;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px cyan;
+}
+                </code></pre>
+            </div>
+        </div>
+        <img src="https://imgs.search.brave.com/Nec08QJ9jDjbt0HoIxyAmplYW2mAOcm_E2txx1UFCEk/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvc29s/ZGllci1waWN0dXJl/cy1kNTllZWU1NnF6/YXRmbWJlLmpwZw" alt="Imagen futurista de programación" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 0 15px #0ff;">
+        <!-- Caja de datos personales con efecto futurista -->
+        <div class="neon-box details">
+            <h2>Información:</h2>
+            <p class="info"><strong>Nombre:</strong> Dylan Villacorta</p>
+            <p class="info"><strong>Email:</strong> <a href="mailto:dylanvillacorta09@gmail.com">dylanvillacorta09@gmail.com</a></p>
+            <p class="info"><strong>Redes sociales:</strong> 
+                <a href="https://www.instagram.com/alexissvillacorta/" target="_blank">Instagram</a>, 
+            
+            </p>
+            <p class="info"><strong>Ubicación:</strong> Ciudad autonoma de Buenos Aires</p>
+            <p class="info"><strong>Habilidades:</strong> HTML, CSS, JavaScript, Python, React</p>
+        </div>
+    </body>
+</html>
